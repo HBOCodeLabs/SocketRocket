@@ -894,6 +894,10 @@ static inline BOOL closeCodeIsValid(int closeCode) {
         return;
     }
     
+    // Below we cast payload_length to size_t. payload_length is always 64-bit but size_t may not be.
+    if (frame_header.payload_length > SIZE_MAX) {
+        return;
+    }
     
     BOOL isControlFrame = (frame_header.opcode == SROpCodePing || frame_header.opcode == SROpCodePong || frame_header.opcode == SROpCodeConnectionClose);
     
@@ -924,7 +928,7 @@ static inline BOOL closeCodeIsValid(int closeCode) {
             }
         }
     } else {
-        [self _addConsumerWithDataLength:frame_header.payload_length callback:^(SRWebSocket *self, NSData *newData) {
+        [self _addConsumerWithDataLength:(size_t)frame_header.payload_length callback:^(SRWebSocket *self, NSData *newData) {
             if (isControlFrame) {
                 [self _handleFrameWithData:newData opCode:frame_header.opcode];
             } else {
