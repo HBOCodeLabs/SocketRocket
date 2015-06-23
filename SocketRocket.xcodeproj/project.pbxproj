@@ -94,7 +94,7 @@
 		F6B2082D1450F597009315AF /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B208301450F597009315AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6B208341450F597009315AF /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
-		F6BDA802145900D200FE3253 /* SRWebSocketTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SRWebSocketTests.octest; path = SRWebSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BDA802145900D200FE3253 /* SRWebSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SRWebSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BDA809145900D200FE3253 /* SRWebSocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SRWebSocketTests-Info.plist"; sourceTree = "<group>"; };
 		F6BDA80B145900D200FE3253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6BDA810145900D200FE3253 /* SRWebSocketTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRWebSocketTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -222,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				F6B2082D1450F597009315AF /* libSocketRocket.a */,
-				F6BDA802145900D200FE3253 /* SRWebSocketTests.octest */,
+				F6BDA802145900D200FE3253 /* SRWebSocketTests.xctest */,
 				F62417E314D52F3C003CE997 /* TestChat.app */,
 				F668C880153E91210044DBAC /* SocketRocket.framework */,
 			);
@@ -379,7 +379,7 @@
 			);
 			name = SRWebSocketTests;
 			productName = SRWebSocketTests;
-			productReference = F6BDA802145900D200FE3253 /* SRWebSocketTests.octest */;
+			productReference = F6BDA802145900D200FE3253 /* SRWebSocketTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
